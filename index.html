@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <title>Гороскоп на сегодня</title>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		  
+		 <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+Data = new Date();
+Year = Data.getFullYear();
+Month = Data.getMonth();
+Day = Data.getDate();
+ 
+// Преобразуем месяца
+switch (Month)
+{
+  case 0: fMonth="января"; break;
+  case 1: fMonth="февраля"; break;
+  case 2: fMonth="марта"; break;
+  case 3: fMonth="апреля"; break;
+  case 4: fMonth="мае"; break;
+  case 5: fMonth="июня"; break;
+  case 6: fMonth="июля"; break;
+  case 7: fMonth="августа"; break;
+  case 8: fMonth="сентября"; break;
+  case 9: fMonth="октября"; break;
+  case 10: fMonth="ноября"; break;
+  case 11: fMonth="декабря"; break;
+}
+ 
+// Вывод
+
+</script>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id="test" align="center"><script>document.write(Day+" "+fMonth+" "+Year+" года" +" " + "вас ждет!"); </script></h1>
+<div class="row" style="margin-top:40px">
+  <div class="col" id="p-0">
+  </div>
+  <div class="col" id="p-1">
+  </div>
+    <div class="col" id="p-2">
+  </div>
+</div>
+<div class="row">
+  <div class="col" id="p-3">
+  </div>
+    <div class="col" id="p-4">
+  </div>
+  <div class="col" id="p-5">
+  </div>
+</div>
+		</div>
+	</body>
+	<script src="helpers.js" language="javascript"></script>
+</html>
